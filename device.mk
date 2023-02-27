@@ -170,6 +170,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 PRODUCT_VENDOR_PROPERTIES += \
     debug.force_no_blanking=true \
     debug.sf.treat_170m_as_sRGB=1 \
+    persist.sys.sf.native_mode=269 \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.enable_hdr10_gpu_target=1 \
