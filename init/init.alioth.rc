@@ -95,3 +95,7 @@ service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
 
 on boot && property:ro.boot.product.hardware.sku=pro
     enable nqnfc_2_0_hal_service
+
+on property:sys.boot_completed=1
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
